@@ -13,15 +13,15 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-size_t	_flex(char *s, int c, int regina, int size)
+size_t	_flex(char *s, int c, int x, int size)
 {
-	if (regina == 0)
+	if (x == 0)
 	{	
 		while (s[size])
 			size++;
 		return (size);
 	}
-	else if (regina == 1)
+	else if (x == 1)
 	{
 		while (*s)
 		{
